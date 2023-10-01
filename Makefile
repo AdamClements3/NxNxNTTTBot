@@ -1,11 +1,7 @@
+files = Model/Board.cpp Model/Computer.cpp Model/Player.cpp View/View.cpp Controller/Controller.cpp
+
 default:
-	g++ -O3 TicTacToe.cpp Board.cpp Player.cpp Computer.cpp -o TicTacToe
+	g++ -O3 $(files) -o TicTacToe
 
 run: default
-	./TicTacToe 3
-
-4: default
-	./TicTacToe 4
-
-5: default
-	./TicTacToe 5
+	./TicTacToe

@@ -4,10 +4,11 @@
 #include "Board.h"
 class Player{
     private:
-        char token = 'X';
-        int val = 1;
+        char token;
+        int val;
     public:
-        void getMove(int*, Board*);
+        Player();
+        Player(char, int);
         int getValue();
         char getToken();
 };
